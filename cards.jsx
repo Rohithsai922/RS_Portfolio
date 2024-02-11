@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import image from "../../assets/nav.jpg"
 import { useEffect } from 'react';
-
+import { FaGithub } from "react-icons/fa6";
+import { CiLocationArrow1 } from "react-icons/ci";
 import { Avatar, Button, Card , Skeleton } from 'antd';
 import '../Cards/cards.css'
 const { Meta } = Card;
@@ -20,7 +21,7 @@ const Cards = ({titlee,descriptionn}) => {
   
   
   return (
-    <div>
+    <div className='card-container'>
       
     <Card className='card' 
     style={{ width: 300 }}
@@ -42,7 +43,8 @@ const Cards = ({titlee,descriptionn}) => {
     </Skeleton>
     <br />
     <div className='button_div'>
-    <Button className='button'>Click here</Button>
+    <Button className='button'>Visit Project <FaGithub className='icon'/></Button>
+    <Button className='button'>Know more <CiLocationArrow1 className='icon'/></Button>
     </div>
   </Card>
   

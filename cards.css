@@ -1,8 +1,15 @@
-.card{
-    margin-left: 40px;
 
+.button{
+    margin-left: 5px;
 }
-.button_div{
-     
-   align-items: center;
+.githublogo{
+    left:10px;
 }
+
+
+.card{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+  
+  
