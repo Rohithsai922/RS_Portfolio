@@ -21,21 +21,6 @@
 
 
 
-@keyframes flow {
-    0%{
-        border-radius: 60% 40% 40% 60% / 60% 40% 60% 40%;
-    }
-    35%{
-        border-radius: 80% 70% 60% 60% / 80% 70% 60% 60%;
-    }
-    70%{
-        border-radius: 70% 90% 60% 70% / 80% 90% 50% 90%;
-    }
-    100%{
-        border-radius: 60% 40% 40% 60% / 60% 40% 60% 40%;
-    }
-    
-}
 /*css for hero section*/
 .hero-section{
     
@@ -53,8 +38,8 @@
 
 
 .intro{
-    margin-left: 200px;
-    margin-top: 20px;
+    margin-left: 120px;
+    margin-top: 60px;
     flex: 1;
     color: azure;
   
@@ -62,9 +47,23 @@
     
 }
 
+@media (max-width: 767px) {
+  .hero-section {
+    flex-direction: column; /* Display cards in a single column on small screens */
+    
+  }
+  
+  .blob {
+    justify-content: center; /* Center the image horizontally on small screens */
+     
+}
+}
+
+
+
 h2{
     color: white;
-    text-align : center;
+    
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -92,7 +91,8 @@ h2{
 @media (max-width: 767px) {
     .container {
       flex-direction: column; /* Display cards in a single column on small screens */
-      align-items: stretch; /* Stretch cards to full width */
+      align-items: stretch; 
+      margin-top: 320px;/* Stretch cards to full width */
     }
     
     .card {
@@ -177,4 +177,13 @@ h2{
 }
 p{
  color:aliceblue
+}
+
+@media screen and (max-width: 600px) {
+  .typewriter h1 {
+    overflow: visible; /* Display the full content without hiding */
+    white-space: normal; /* Allow the content to wrap on smaller screens */
+    border-right: none; /* Remove the typewriter cursor */
+    animation: none; /* Disable the typing effect on small screens */
+  }
 }

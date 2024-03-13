@@ -19,9 +19,9 @@ const Navbarr= () => {
    
     <FaUserGraduate className='logo'/>
     
-    <li><Link to="/contact">Contact</Link></li>
-    <li><Link to="/projects">Projects</Link></li>
-    <li><Link to="/gallery">Gallery</Link></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#section2">Gallery</a></li>
     <li><Link to="/">Home</Link></li>
     
   

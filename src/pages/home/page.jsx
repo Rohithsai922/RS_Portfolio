@@ -1,7 +1,7 @@
 import React from 'react'
 import '../home/home.css'
 import Cards from '../../components/Cards/cards'
-import profile from '../../assets/Profile_img.png'
+import profile from '../../assets/profile_img.jpg'
 import Footer from '../../components/Footer/Footer'
 
 import html from "../../assets/html.png"
@@ -39,9 +39,10 @@ const Home = () => {
       </div>
 
       </div>
-     
-     <h2>Projects</h2>
+     <div id="projects"></div>
+     <center><h2>Projects</h2></center>
     <div className='container'>
+    
      <Cards titlee="Expense Manager"
             imagee={expimage}
            descriptionn="Coming soon" 
@@ -61,7 +62,7 @@ const Home = () => {
      </div>
 
      <div className='skill-container'>
-      <h2>Skills</h2>
+      <center><h2>Skills</h2></center>
       <div className='first_set'>
       <img className='skill1' src={html} alt="html" />
       <img className='skill1' src={css} alt="css" />
