@@ -12,7 +12,7 @@ const Navbarr= () => {
   return (
 
 
-    <>
+    <div className='nav-bar'>
       
     <ul>
  
@@ -27,7 +27,7 @@ const Navbarr= () => {
   
   
    </ul>
-    </>
+    </div>
   )
 }
 

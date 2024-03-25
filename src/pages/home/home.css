@@ -11,9 +11,17 @@
 }
 
 
+.blob{
+  perspective: 1000px;
+}
 
+.blob:hover .profileimg {
+  transform: rotateY(-20deg); /* Rotate the image along the Y-axis */
+}
 
-
+.profileimg {
+  transition: transform 0.5s; /* Add a transition for smooth animation */
+}
 
 
 
@@ -57,6 +65,22 @@
     justify-content: center; /* Center the image horizontally on small screens */
      
 }
+}
+.carde{
+  background-color:black;
+  padding: 1.5rem 1.75rem;
+  cursor: pointer;
+  width: calc(33.33% - 90px);
+  
+  
+   /* Adjust width and margin as needed */
+    
+  
+}
+.card-content{
+  padding-left: 50px;
+  padding-top: 5px;
+  
 }
 
 
@@ -185,5 +209,72 @@ p{
     white-space: normal; /* Allow the content to wrap on smaller screens */
     border-right: none; /* Remove the typewriter cursor */
     animation: none; /* Disable the typing effect on small screens */
+  }
+}
+
+#About{
+  border: 2px solid whitesmoke;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .intro {
+    margin-bottom: 20px; /* Decrease margin at the bottom */
+  }
+
+  #About {
+    margin-top: 340px; /* Decrease margin at the top */
+  }
+}
+
+
+.Aboutcontainer {
+ display: flex;
+  
+}
+
+#About {
+  width: 50%;
+  margin-left: 20px;
+  scroll-margin-top: 100px; /* Adjust as needed */
+  animation: slideFromLeft 1.5s forwards;
+  
+}
+
+#Aboutimage {
+  width: 50%;
+  
+  opacity: 0;
+  animation: slideFromRight 1.5s forwards;
+  scroll-margin-top: 100px;
+  
+}
+
+#Aboutimage img {
+  width: 400px;
+  height: 400px;
+  margin-left: 100px;
+  border-radius: 50%;
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
