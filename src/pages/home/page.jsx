@@ -12,12 +12,12 @@ import php from '../../assets/php.png'
 import cpp from '../../assets/cpp.png'
 import c from '../../assets/c.jpg'
 import mysql from '../../assets/mysql.jpg'
-
+import resume from '../../assets/Rohith_sai_Resume.pdf'
 import expimage from "../../assets/exp_man_bg.webp"
 import bakeryimage from "../../assets/bakery_bg.jpg"
 import cmgsoon from "../../assets/cmgsoon.jpeg"
 import aboutimg from "../../assets/aboutimg.png"
-
+import { Button } from 'antd'
 
 import {motion} from 'framer-motion'
 import { useState } from 'react'
@@ -52,7 +52,9 @@ const Home = () => {
         </div>
         <h2>Computer Science Student</h2>
         <h2>Pre-final Year at NIT SURAT</h2>
-
+        <a href={resume} download="Rohith_Resume">
+        <Button id="resume">Resume</Button>
+        </a>
       </div>
 
       </div>
@@ -61,13 +63,18 @@ const Home = () => {
       <div id="About">
         
 
-          <h3>  Hello, I'm [Your Name], currently in my third year pursuing Computer Science at NIT Surat.
-             I am deeply passionate about web development and competitive programming.
-              From crafting interactive web applications to solving  algorithmic problems, I find joy in the process of creating and innovating.
-              My journey into the world of technology began with a fascination for the web. Over time, 
+          <h3>   
+              I am deeply passionate about web development and competitive programming.
+          </h3>
+          <h3>
+              From crafting interactive web applications to solving  algorithmic problems, I find joy in the process
+               of creating and innovating.
+          </h3>
+          <h3>
+               Over time, 
               I've honed my skills in front-end and back-end development, exploring various technologies and frameworks to bring my ideas to life.
-              Beyond the realms of technology, I find solace in the pages of books, indulging in diverse genres and perspectives.
-              As I continue my journey, I look forward to exploring new avenues, pushing boundaries, and making a meaningful impact through my work.</h3>
+          </h3>
+          
       </div>
       
       <div id="Aboutimage">
