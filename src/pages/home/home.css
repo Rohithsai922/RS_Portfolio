@@ -1,5 +1,7 @@
 
-
+h2{
+  font-family:Poppins;
+}
 
 .blob img{
     width: 100%;
@@ -66,7 +68,7 @@
 }
 }
 .carde{
-  background-color:black;
+  background-color:rgb(17,24,39);
   padding: 1.5rem 1.75rem;
   cursor: pointer;
   width: calc(33.33% - 90px);
@@ -226,6 +228,8 @@ backdrop-filter: blur(2px);
 border: 1px solid rgba(255, 255, 255, 0.29);
 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+
 @media screen and (max-width: 768px) {
   /* Adjust styles for smaller screens */
   .intro {
@@ -240,7 +244,7 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
 
 .Aboutcontainer {
  display: flex;
-  
+  margin-top: 50px;
 }
 
 #About {
@@ -285,3 +289,9 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     opacity: 1;
   }
 }
+
+
+
+
+
+ 

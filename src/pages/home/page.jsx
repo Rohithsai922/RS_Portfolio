@@ -2,7 +2,7 @@ import React from 'react'
 import '../home/home.css'
 import Cards from '../../components/Cards/cards'
 import profile from '../../assets/profile_img.jpg'
-import Footer from '../../components/Footer/Footer'
+
 
 import html from "../../assets/html.jpg"
 import css from "../../assets/css.jpg"
@@ -47,7 +47,7 @@ const Home = () => {
         <h1>Rohith sai</h1>
 
         <div class="typewriter">
-        <h1>𝓘 𝓪𝓶 𝓕𝓾𝓵𝓵 𝓢𝓽𝓪𝓬𝓴 𝓓𝓮𝓿𝓮𝓵𝓸𝓹𝓮𝓻...</h1>
+        <h1>I am a Full Stack Developer...</h1>
 
         </div>
         <h2>Computer Science Student</h2>
@@ -58,7 +58,9 @@ const Home = () => {
       </div>
 
       </div>
+        
 
+       <center><h2>About</h2></center> 
       <div className="Aboutcontainer">
       <div id="About">
         
@@ -221,16 +223,18 @@ const Home = () => {
      </div>
 
 
+
+
          
     <div id='contact'> 
-     <p> These are the contact details</p>
+     
      
     </div>
    
    
      
     <a href="https://forms.visme.co/formsPlayer/jwowozq1-contact-form">Click to contact</a>
-      
+  
    
     </div>
   )
