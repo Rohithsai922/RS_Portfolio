@@ -1,25 +1,112 @@
-import React from 'react'
-import insta from '../../assets/instagram.jpg'
-import gmail from '../../assets/gmail.jpg'
-import linkedin from '../../assets/linkedin.jpg'
-import '../Footer/FooterStyles.css'
-const Footer = () => {
-  return (
-    
-         <footer class="footer">
-          
-            <div className="social-media-links">
-            <center>
-        <a href="https://www.twitter.com"><img src={gmail} alt="Gmail"/></a>
-        <a href="https://www.instagram.com"><img src={insta} alt="Instagram"/></a>
-        <a href="https://www.linkedin.com"><img src={linkedin} alt="LinkedIn"/></a>
-        </center>
-          </div>
-         <center><p>&copy;2024 Rohith sai | All Rights Reserved</p></center>
-         
-  </footer>
-    
-  )
-}
+// Filename - components/Footer.js
+import { Button } from "antd";
+import { MdMailOutline } from "react-icons/md";
+import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import React from "react";
+import {
+	Box,
+	FooterContainer,
+	Row,
+	Column,
+	FooterLink,
+	Heading,
+} from "./FooterStyles";
 
-export default Footer
+const Footer = () => {
+	return (
+		<Box>
+			<h1
+				style={{
+					color: "green",
+					textAlign: "center",
+					marginTop: "10px",
+				}}
+			>
+			
+			</h1>
+			<FooterContainer>
+				<Row>
+					<Column>
+						<Heading>My Portfolio</Heading>
+						<FooterLink href="#">
+							Home
+						</FooterLink>
+						<FooterLink href="#About">
+							About
+						</FooterLink>
+						<FooterLink href="#projects">
+							Projects
+						</FooterLink>
+					</Column>
+					<Column>
+						<Heading>Social Media</Heading>
+						<FooterLink href="#">
+							Gmail  <MdMailOutline />
+						</FooterLink>
+						<FooterLink href="#">
+							Instagram  <FaInstagram />
+						</FooterLink>
+						<FooterLink href="#">
+							Github <FaGithub />
+						</FooterLink>
+						
+					</Column>
+					<Column>
+						<Heading>FeedBack Form</Heading>
+						<Button>FeedBack</Button>
+						
+					</Column>
+					<Column>
+						<Heading>Social Media</Heading>
+						<FooterLink href="#">
+							<i className="fab fa-facebook-f">
+								<span
+									style={{
+										marginLeft: "10px",
+									}}
+								>
+									Facebook
+								</span>
+							</i>
+						</FooterLink>
+						<FooterLink href="#">
+							<i className="fab fa-instagram">
+								<span
+									style={{
+										marginLeft: "10px",
+									}}
+								>
+									Instagram
+								</span>
+							</i>
+						</FooterLink>
+						<FooterLink href="#">
+							<i className="fab fa-twitter">
+								<span
+									style={{
+										marginLeft: "10px",
+									}}
+								>
+									Twitter
+								</span>
+							</i>
+						</FooterLink>
+						<FooterLink href="#">
+							<i className="fab fa-youtube">
+								<span
+									style={{
+										marginLeft: "10px",
+									}}
+								>
+									Youtube
+								</span>
+							</i>
+						</FooterLink>
+					</Column>
+				</Row>
+			</FooterContainer>
+		</Box>
+	);
+};
+export default Footer;

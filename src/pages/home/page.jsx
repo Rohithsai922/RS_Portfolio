@@ -1,17 +1,17 @@
 import React from 'react'
 import '../home/home.css'
 import Cards from '../../components/Cards/cards'
-import profile from '../../assets/profile_img.jpg'
+import profile from '../../assets/Profile_img.png'
+import Footer from '../../components/Footer/Footer'
 
-
-import html from "../../assets/html.jpg"
-import css from "../../assets/css.jpg"
-import js from "../../assets/js.jpg"
+import html from "../../assets/html.png"
+import css from "../../assets/css.png"
+import js from "../../assets/js.png"
 import react from "../../assets/react.png"
 import php from '../../assets/php.png'
-import cpp from '../../assets/cpp.png'
-import c from '../../assets/c.jpg'
-import mysql from '../../assets/mysql.jpg'
+import cpp from '../../assets/cpp.jpg'
+import c from '../../assets/c.png'
+import mysql from '../../assets/mysql.png'
 import resume from '../../assets/Rohith_sai_Resume.pdf'
 import expimage from "../../assets/exp_man_bg.webp"
 import bakeryimage from "../../assets/bakery_bg.jpg"
@@ -60,8 +60,9 @@ const Home = () => {
       </div>
         
 
-       <center><h2>About</h2></center> 
+      <center><h2>About</h2></center> 
       <div className="Aboutcontainer">
+      
       <div id="About">
         
 
@@ -90,8 +91,11 @@ const Home = () => {
 
 
 
-     <div id="projects"></div>
+     <div id="projects">
      <center><h2>Projects</h2></center>
+     </div>
+
+
     <div className='container'>
     
 
@@ -203,7 +207,10 @@ const Home = () => {
       </motion.div>
      </div>
 
+
+
      <div className='skill-container'>
+      
       <center><h2>Skills</h2></center>
       <div className='first_set'>
       <img className='skill1' src={html} alt="html" />
@@ -233,9 +240,9 @@ const Home = () => {
    
    
      
-    <a href="https://forms.visme.co/formsPlayer/jwowozq1-contact-form">Click to contact</a>
+    
   
-   
+     <Footer/>
     </div>
   )
 }
