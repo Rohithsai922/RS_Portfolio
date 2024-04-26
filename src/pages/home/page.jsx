@@ -3,13 +3,13 @@ import '../home/home.css'
 import Cards from '../../components/Cards/cards'
 import profile from '../../assets/Profile_img.png'
 import Footer from '../../components/Footer/Footer'
-
+import Timeline from '../../components/Timeline/timeline'
 import html from "../../assets/html.png"
 import css from "../../assets/css.png"
 import js from "../../assets/js.png"
 import react from "../../assets/react.png"
 import php from '../../assets/php.png'
-import cpp from '../../assets/cpp.jpg'
+import cpp from '../../assets/cppbgless.png'
 import c from '../../assets/c.png'
 import mysql from '../../assets/mysql.png'
 import resume from '../../assets/Rohith_sai_Resume.pdf'
@@ -18,9 +18,11 @@ import bakeryimage from "../../assets/bakery_bg.jpg"
 import cmgsoon from "../../assets/cmgsoon.jpeg"
 import aboutimg from "../../assets/aboutimg.png"
 import { Button } from 'antd'
-
 import {motion} from 'framer-motion'
 import { useState } from 'react'
+
+
+
 const Home = () => {
   const [isOpen1, setIsOpen1] = useState(false)
   const [isOpen2, setIsOpen2] = useState(false)
@@ -51,16 +53,17 @@ const Home = () => {
 
         </div>
         <h2>Computer Science Student</h2>
-        <h2>Pre-final Year at NIT SURAT</h2>
+        <h2>Final Year at NIT SURAT </h2>
         <a href={resume} download="Rohith_Resume">
         <Button id="resume">Resume</Button>
         </a>
       </div>
-
+       
       </div>
+     
         
 
-      <center><h2>About</h2></center> 
+      <center><h2 className='heading'>About</h2></center> 
       <div className="Aboutcontainer">
       
       <div id="About">
@@ -81,7 +84,7 @@ const Home = () => {
       </div>
       
       <div id="Aboutimage">
-        <img alt="about" src={aboutimg}/>
+        <img alt="about" src={aboutimg} />
       </div>
 
 
@@ -92,7 +95,7 @@ const Home = () => {
 
 
      <div id="projects">
-     <center><h2>Projects</h2></center>
+     <center><h2 className='heading'>Projects</h2></center>
      </div>
 
 
@@ -114,7 +117,7 @@ const Home = () => {
 
      <Cards titlee="Expense Manager"
             imagee={expimage}
-           descriptionn="Coming soon" 
+           descriptionn="" 
            github="https://github.com/Rohithsai922/Expense_Manager.git" 
            onClick={toggleIsOpen1}
            className="card"/>
@@ -126,11 +129,15 @@ const Home = () => {
             animate={{clipPath: 'circle(140.9% at 0 0)'}}
             transition={{duration: .5,delay: .25,type:'spring', damping:25,stiffness: 100}}
           >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eligendi, doloribus cum nesciunt alias harum molestias tempore,
+            <p className='knowmore'>
+               This is an expense manager web application made using various technologies.
+               It's objective is to store the day-to-day expenses of an user. It is user authenticated.
+               It helps to analyse the expenses based on the category spent by the user.
+               The data is well stored in the database using MYSQL.
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eligendi, doloribus cum nesciunt alias harum molestias tempore,
+            <p className='knowmore'>
+              Tech Stacks : HTML,CSS, JS, MYSQL, PHP
+                 
             </p>
           </motion.div>
         )}
@@ -149,7 +156,7 @@ const Home = () => {
         >     
      <Cards titlee="A1_Bakery" 
             imagee={bakeryimage}
-            descriptionn="Coming soon"
+            descriptionn=""
             github="https://github.com/Rohithsai922/A1_BAKERY.git" 
             onClick={toggleIsOpen2}
             className="card"/>
@@ -161,11 +168,13 @@ const Home = () => {
             animate={{clipPath: 'circle(140.9% at 0 0)'}}
             transition={{duration: .5,delay: .25,type:'spring', damping:25,stiffness: 100}}
           >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eligendi, doloribus cum nesciunt alias harum molestias tempore,
+            <p className='knowmore'>
+              A Frontend web application created in the "Google Winter of Code" Contest in my 1st year. 
+              This is a group project of '4' and  it's objective is to create a front-end interface for a Bakery. 
+              
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eligendi, doloribus cum nesciunt alias harum molestias tempore,
+            <p className='knowmore'>
+              Tech Stacks : HTML, CSS, JS , React
             </p>
           </motion.div>
         )}
@@ -207,26 +216,25 @@ const Home = () => {
       </motion.div>
      </div>
 
-
+     <Timeline/>
 
      <div className='skill-container'>
       
-      <center><h2>Skills</h2></center>
+      <center><h2 className='heading'>Skills</h2></center>
       <div className='first_set'>
       <img className='skill1' src={html} alt="html" />
       <img className='skill1' src={css} alt="css" />
       <img className='skill1' src={js} alt="js" />
       <img className='skill1' src={cpp} alt="cpp" />
       <img className='skill1' src={c} alt="c" />
+      <img className='skill1' src={mysql} alt="mysql" />
+      <img className='skill1' src={php} alt="cpp" />
+      <img className='skill1' src={react} alt="react" />
       
       </div>
       <br />
       <br />
-      <div className='second_set'>
-      <img className='skill2' src={mysql} alt="mysql" />
-      <img className='skill2' src={php} alt="cpp" />
-      <img className='skill2' src={react} alt="react" />
-      </div>
+    
      </div>
 
 

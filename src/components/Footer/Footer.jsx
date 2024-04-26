@@ -3,6 +3,8 @@ import { Button } from "antd";
 import { MdMailOutline } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import pointer from "../../assets/pointer.gif";
+import thanks from "../../assets/thanks.gif";
 import React from "react";
 import {
 	Box,
@@ -16,15 +18,7 @@ import {
 const Footer = () => {
 	return (
 		<Box>
-			<h1
-				style={{
-					color: "green",
-					textAlign: "center",
-					marginTop: "10px",
-				}}
-			>
-			
-			</h1>
+		
 			<FooterContainer>
 				<Row>
 					<Column>
@@ -41,68 +35,31 @@ const Footer = () => {
 					</Column>
 					<Column>
 						<Heading>Social Media</Heading>
-						<FooterLink href="#">
+						<FooterLink href="mailto:rohithsai352@gmail.com">
 							Gmail  <MdMailOutline />
 						</FooterLink>
-						<FooterLink href="#">
-							Instagram  <FaInstagram />
-						</FooterLink>
-						<FooterLink href="#">
+						<FooterLink href="https://github.com/Rohithsai922">
 							Github <FaGithub />
 						</FooterLink>
+						<FooterLink href="https://www.instagram.com/rohithsai922/">
+							Instagram  <FaInstagram />
+						</FooterLink>
+						
 						
 					</Column>
 					<Column>
 						<Heading>FeedBack Form</Heading>
+						<a href="https://forms.visme.co/formsPlayer/jwowozq1-contact-form">
 						<Button>FeedBack</Button>
+						</a>
+						<img src={pointer} alt="pointer" />
 						
 					</Column>
 					<Column>
-						<Heading>Social Media</Heading>
-						<FooterLink href="#">
-							<i className="fab fa-facebook-f">
-								<span
-									style={{
-										marginLeft: "10px",
-									}}
-								>
-									Facebook
-								</span>
-							</i>
-						</FooterLink>
-						<FooterLink href="#">
-							<i className="fab fa-instagram">
-								<span
-									style={{
-										marginLeft: "10px",
-									}}
-								>
-									Instagram
-								</span>
-							</i>
-						</FooterLink>
-						<FooterLink href="#">
-							<i className="fab fa-twitter">
-								<span
-									style={{
-										marginLeft: "10px",
-									}}
-								>
-									Twitter
-								</span>
-							</i>
-						</FooterLink>
-						<FooterLink href="#">
-							<i className="fab fa-youtube">
-								<span
-									style={{
-										marginLeft: "10px",
-									}}
-								>
-									Youtube
-								</span>
-							</i>
-						</FooterLink>
+						
+						
+							<img src={thanks} alt="Thank you"    style={{ marginTop: '40px' }}  />
+						
 					</Column>
 				</Row>
 			</FooterContainer>

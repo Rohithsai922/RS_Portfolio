@@ -3,7 +3,7 @@ import { useState } from 'react';
 import '../Navbarr/Navbar.css'
 import { FaUserGraduate } from "react-icons/fa6";
 import { Link } from 'react-router-dom'
-import image from '../../assets/nav.jpg'
+
 
 const Navbarr= () => {
 
@@ -16,13 +16,16 @@ const Navbarr= () => {
       
     <ul>
  
-   
-    <FaUserGraduate className='logo'/>
+     
+    <FaUserGraduate className='logo'/> 
+
+  
     
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#section2">Gallery</a></li>
-    <li><Link to="/">Home</Link></li>
+
+    <li ><a  href="#contact" className='line'>Contact</a></li>
+    <li ><a href="#projects">Projects</a></li>
+    <li ><a href="#About">About</a></li>
+    <li  ><Link to="/">Home</Link></li>
     
   
   
