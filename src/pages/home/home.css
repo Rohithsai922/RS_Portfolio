@@ -23,9 +23,9 @@
 .hero-section{
     
     height: 400px;
-    
+    width:98%;
     display: inline-flex;
-    width: 100%;
+    
     margin-top: 10px;
     background-position: center; 
     /* From https://css.glass */
@@ -35,7 +35,7 @@
      backdrop-filter: blur(0px);
      -webkit-backdrop-filter: blur(0px);
      border: 1px solid rgba(255, 255, 255, 0.51);
-
+    
   
   
 }
@@ -86,7 +86,17 @@ h2{
 }
 
 
-
+.card-content{
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.03);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.4px);
+-webkit-backdrop-filter: blur(1.4px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+margin-left: 60px;
+padding: 10px;
+}
 
 
 /*skills*/
@@ -230,8 +240,8 @@ p{
 @media (max-width: 767px) {
   .hero-section {
     flex-direction: column;
-    margin-bottom: 500px; /* Display cards in a single column on small screens */
-    
+    margin-bottom: 360px; /* Display cards in a single column on small screens */
+    height: 525px;
   }
   
   .blob {
@@ -255,7 +265,7 @@ p{
 @media (max-width: 767px) {
   .Aboutcontainer {
     flex-direction: column;
-    margin-top: 20px; /* Display cards in a single column on small screens */
+    margin-top: 10px; /* Display cards in a single column on small screens */
     
   }
   
@@ -289,7 +299,7 @@ p{
                            /* On small screens, each child occupies full width */
   }
   
-
+ 
 
 }
 
@@ -340,6 +350,13 @@ p{
     border: 1px solid black;
     margin-bottom: 20px;
     
+  }
+  .card-content{
+    width:300px;
+    overflow-wrap: break-word;
+    justify-content: center; 
+    padding-left: 10px;
+    margin-left: 0px;
   }
 
 }

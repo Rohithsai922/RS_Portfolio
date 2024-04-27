@@ -3,7 +3,7 @@ import '../home/home.css'
 import Cards from '../../components/Cards/cards'
 import profile from '../../assets/Profile_img.png'
 import Footer from '../../components/Footer/Footer'
-import Timeline from '../../components/Timeline/timeline'
+import Timeline from '../../components/Timeline/Timeline'
 import html from "../../assets/html.png"
 import css from "../../assets/css.png"
 import js from "../../assets/js.png"
@@ -15,7 +15,7 @@ import mysql from '../../assets/mysql.png'
 import resume from '../../assets/Rohith_sai_Resume.pdf'
 import expimage from "../../assets/exp_man_bg.webp"
 import bakeryimage from "../../assets/bakery_bg.jpg"
-import cmgsoon from "../../assets/cmgsoon.jpeg"
+import blog from "../../assets/blog.png"
 import aboutimg from "../../assets/aboutimg.png"
 import { Button } from 'antd'
 import {motion} from 'framer-motion'
@@ -46,7 +46,7 @@ const Home = () => {
       <img src={profile} alt="Profile" className='profileimg' />
       </div>
       <div className="intro">
-        <h1>Rohith sai</h1>
+        <h1>Penumajji Rohith sai</h1>
 
         <div class="typewriter">
         <h1>I am a Full Stack Developer...</h1>
@@ -192,9 +192,10 @@ const Home = () => {
           className="card-top" 
           layout="position"
         >     
-     <Cards titlee="Coming_soon" 
-           imagee={cmgsoon}
-          descriptionn="Coming soon" 
+     <Cards titlee="Personal_Blog" 
+           imagee={blog}
+          descriptionn="" 
+           github="https://github.com/Rohithsai922/Personal_Blog.git"
           onClick={toggleIsOpen3}
           className="card"/>
       </motion.div>
@@ -206,10 +207,12 @@ const Home = () => {
             transition={{duration: .5,delay: .25,type:'spring', damping:25,stiffness: 100}}
           >
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eligendi, doloribus cum nesciunt alias harum molestias tempore,
+                 This is a Blog web application provided with many outstanding features. 
+                 It is User-authenticated and it helps to find blogs based on the genres , most liked and most recent.
+                Also, It can manage personal blogs as well as public blogs. This is well structured to have seamless experience to the users.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eligendi, doloribus cum nesciunt alias harum molestias tempore,
+                 Tech Stacks : HTML, CSS, JS , React, NodeJS , MongoDB, ExpressJS .    
             </p>
           </motion.div>
         )}
@@ -225,12 +228,13 @@ const Home = () => {
       <img className='skill1' src={html} alt="html" />
       <img className='skill1' src={css} alt="css" />
       <img className='skill1' src={js} alt="js" />
-      <img className='skill1' src={cpp} alt="cpp" />
-      <img className='skill1' src={c} alt="c" />
-      <img className='skill1' src={mysql} alt="mysql" />
-      <img className='skill1' src={php} alt="cpp" />
       <img className='skill1' src={react} alt="react" />
       
+      <img className='skill1' src={c} alt="c" />
+      <img className='skill1' src={mysql} alt="mysql" />
+      
+      <img className='skill1' src={cpp} alt="cpp" />
+      <img className='skill1' src={php} alt="php" />
       </div>
       <br />
       <br />
