@@ -20,8 +20,8 @@ import Timeline from '../../components/Timeline/Timeline'
 import { Button } from 'antd'
 import {motion} from 'framer-motion'
 import { useState } from 'react'
-import { Fade, Zoom } from 'react-reveal';
-import { AttentionSeeker, Bounce, Slide } from 'react-awesome-reveal'
+import { Fade } from 'react-reveal';
+import { AttentionSeeker } from 'react-awesome-reveal'
 
 const Home = () => {
   const [isOpen1, setIsOpen1] = useState(false)

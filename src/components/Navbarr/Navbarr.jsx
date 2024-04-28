@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react';
 import '../Navbarr/Navbar.css'
 import { FaUserGraduate } from "react-icons/fa6";
 import { Link } from 'react-router-dom'

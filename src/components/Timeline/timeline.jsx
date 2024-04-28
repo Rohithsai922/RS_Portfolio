@@ -2,7 +2,7 @@ import React from 'react'
 import "./Timeline.css"
 import svnit from "../../assets/svnit.png"
 import bhashyam from "../../assets/bhashyam.png"
-import {Fade} from "react-reveal"
+import {Fade} from "react-awesome-reveal"
 import { FaUserGraduate } from "react-icons/fa";
 import { FaSchool } from "react-icons/fa6";
 import { AttentionSeeker } from 'react-awesome-reveal'
@@ -45,7 +45,7 @@ const Timeline = () => {
            
               <div className="ag-timeline-card_inner">
                 <div className="ag-timeline-card_img-box">
-                  <img src={svnit} class="ag-timeline-card_img" width="400" height="300" />
+                  <img src={svnit} alt="svnit" class="ag-timeline-card_img" width="400" height="300" />
                 </div>
                 <div className="ag-timeline-card_info">
                   <div className="ag-timeline-card_title">B.Tech</div>
@@ -77,7 +77,7 @@ const Timeline = () => {
                 <Slide direction='right' triggerOnce>
               <div class="ag-timeline-card_inner">
                 <div class="ag-timeline-card_img-box">
-                  <img src={bhashyam} class="ag-timeline-card_img" width="600" height="300" alt="" />
+                  <img src={bhashyam} alt="bhashyam" class="ag-timeline-card_img" width="600" height="300"  />
                 </div>
                 <div class="ag-timeline-card_info">
                   <div class="ag-timeline-card_title">11th & 12th</div>

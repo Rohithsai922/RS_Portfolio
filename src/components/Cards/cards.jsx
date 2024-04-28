@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { FaGithub } from "react-icons/fa6";
 import { CiLocationArrow1 } from "react-icons/ci";
-import { Avatar, Button, Card , Skeleton } from 'antd';
+import {  Button, Card , Skeleton } from 'antd';
 import '../Cards/cards.css'
 const { Meta } = Card;
 
