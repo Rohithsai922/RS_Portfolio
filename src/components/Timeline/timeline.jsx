@@ -1,5 +1,5 @@
 import React from 'react'
-import "./timeline.css"
+import "./Timeline.css"
 import svnit from "../../assets/svnit.png"
 import bhashyam from "../../assets/bhashyam.png"
 import {Fade} from "react-reveal"
@@ -87,7 +87,7 @@ const Timeline = () => {
                      I had Completed my Intermediate at Bhashyam Junior College. <br></br>
                       My  Group was : Maths Physics Chemistry (MPC) <br></br>
                      JEE Main Percentile : 99.5%
-                     
+
 
                   </div>
                   

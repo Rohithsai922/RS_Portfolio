@@ -3,7 +3,6 @@ import '../home/home.css'
 import Cards from '../../components/Cards/cards'
 import profile from '../../assets/Profile_img.png'
 import Footer from '../../components/Footer/Footer'
-import Timeline from '../../components/Timeline/Timeline'
 import html from "../../assets/html.png"
 import css from "../../assets/css.png"
 import js from "../../assets/js.png"
@@ -17,6 +16,7 @@ import expimage from "../../assets/exp_man_bg.webp"
 import bakeryimage from "../../assets/bakery_bg.jpg"
 import blog from "../../assets/blog.png"
 import aboutimg from "../../assets/aboutimg.png"
+import Timeline from '../../components/Timeline/Timeline'
 import { Button } from 'antd'
 import {motion} from 'framer-motion'
 import { useState } from 'react'
