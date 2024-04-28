@@ -16,9 +16,9 @@ const Navbarr= () => {
       
     <ul>
  
-     
+     <div className='logodiv'>
     <FaUserGraduate className='logo'/> 
-
+    </div>
   
     
 

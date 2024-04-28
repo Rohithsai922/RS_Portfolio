@@ -51,9 +51,45 @@ ul {
      }
 
      
-     
-    
-    
    
+   .logodiv {
+    position: relative; /* Ensure relative positioning for the container */
+    display: inline-block; 
+    /* Adjust container width as needed */
+  }
+  .logodiv:hover .logo {
+    opacity: 0; /* Hide the logo when container is hovered over */
+  }
+
+  .logodiv:hover::before {
+    content: ''; /* Required for pseudo-element */
+    position: absolute; /* Position pseudo-element absolutely */
+    top: 0;
+    left: 0;
+    width: 100px; /* Adjust width as needed */
+    height: 100%;
+    background: url(../../assets/welcome.gif) center/cover; /* Set background image */
+    opacity: 1;
+    pointer-events: none; 
+    margin-left: 10px;/* Show the welcome image when container is hovered over */
+  }
+    
+  @media (max-width: 767px) {
+  
+    .logodiv:hover::before {
+      content: ''; /* Required for pseudo-element */
+      position: absolute; /* Position pseudo-element absolutely */
+      top: 0;
+      left: 0;
+      width: 60px; /* Adjust width as needed */
+      height: 100%;
+      background: url(../../assets/welcome.gif) center/cover; /* Set background image */
+      opacity: 1;
+      pointer-events: none; 
+      margin-left: 10px;/* Show the welcome image when container is hovered over */
+    }
+   
+  
+  }
       
     

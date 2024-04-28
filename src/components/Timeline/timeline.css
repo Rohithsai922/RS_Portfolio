@@ -63,6 +63,9 @@ img {
   font-size: 40px;
   color: white;
 }
+.ag-timeline_tagline:hover{
+  color: #FF0;
+}
 .ag-timeline_title {
   background-image: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/bg.jpg);
   background-repeat: no-repeat;

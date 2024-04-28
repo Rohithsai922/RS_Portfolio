@@ -51,9 +51,11 @@ const Timeline = () => {
                   <div className="ag-timeline-card_title">B.Tech</div>
                   <div className="ag-timeline-card_desc">
                     
-                    Bachelor of Technology at NIT SURAT
+                     Pursuing Bachelor of Technology at NIT SURAT
                     <br></br>
-                    A Computer Science Under-Graduate.
+                    A Computer Science Under-Graduate.<br>
+                    </br>
+                    Batch :2025
                   </div>
                 </div>
               </div>
@@ -82,9 +84,10 @@ const Timeline = () => {
                   
                   <div class="ag-timeline-card_desc">
                       2019-2021<br></br>
-                    I had Completed my Intermediate at Bhashyam Junior College. <br></br>
-                     Group : MPC <br></br>
+                     I had Completed my Intermediate at Bhashyam Junior College. <br></br>
+                      My  Group was : Maths Physics Chemistry (MPC) <br></br>
                      JEE Main Percentile : 99.5%
+                     
 
                   </div>
                   

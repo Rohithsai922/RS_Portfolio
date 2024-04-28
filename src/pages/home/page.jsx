@@ -108,7 +108,7 @@ const Home = () => {
 
 
     <div className='container'>
-    
+     
     
     <motion.div 
         layout 
@@ -138,10 +138,11 @@ const Home = () => {
             transition={{duration: .5,delay: .25,type:'spring', damping:25,stiffness: 100}}
           >
             <p className='knowmore'>
-               This is an expense manager web application made using various technologies.
-               It's objective is to store the day-to-day expenses of an user. It is user authenticated.
-               It helps to analyse the expenses based on the category spent by the user.
-               The data is well stored in the database using MYSQL.
+              
+This expense manager web application, built using multiple technologies, 
+serves as a comprehensive tool for users to track their daily expenses.
+ With user authentication in place, it securely stores expense data in a MYSQL database.
+ The application facilitates expense analysis by category, offering users insights into their spending patterns.
             </p>
             <p className='knowmore'>
               Tech Stacks : HTML,CSS, JS, MYSQL, PHP
@@ -179,12 +180,14 @@ const Home = () => {
             transition={{duration: .5,delay: .25,type:'spring', damping:25,stiffness: 100}}
           >
             <p className='knowmore'>
-              A Frontend web application created in the "Google Winter of Code" Contest in my 1st year. 
-              This is a group project of '4' and  it's objective is to create a front-end interface for a Bakery. 
-              
+             
+          In my first year, I participated in the Google Winter of Code Contest with a team of four. 
+          Our project involved creating a frontend web application for a bakery,
+         which included a feature to link orders to WhatsApp and various filters based on theme, cost, and rating. . 
+         This experience significantly improved our team and time management skills.
             </p>
             <p className='knowmore'>
-              Tech Stacks : HTML, CSS, JS , React
+              Tech Stacks : HTML, CSS, JS .
             </p>
           </motion.div>
         )}
@@ -217,12 +220,15 @@ const Home = () => {
             animate={{clipPath: 'circle(140.9% at 0 0)'}}
             transition={{duration: .5,delay: .25,type:'spring', damping:25,stiffness: 100}}
           >
-            <p>
-                 This is a Blog web application provided with many outstanding features. 
-                 It is User-authenticated and it helps to find blogs based on the genres , most liked and most recent.
-                Also, It can manage personal blogs as well as public blogs. This is well structured to have seamless experience to the users.
+            <p className='knowmore'>
+            This Blog web application boasts a range of exceptional features, 
+            all geared towards enhancing user experience. 
+            With robust user authentication, it enables users to explore blogs based on genres,
+             popularity (most liked), and recency. Moreover, it offers the versatility to manage both personal
+            and public blogs, 
+            ensuring a seamless experience for all users.
             </p>
-            <p>
+            <p className='knowmore'>
                  Tech Stacks : HTML, CSS, JS , React, NodeJS , MongoDB, ExpressJS .    
             </p>
           </motion.div>
@@ -237,6 +243,7 @@ const Home = () => {
       <AttentionSeeker effect='pulse'>
       <center><h2 className='heading'>Skills</h2></center>
       </AttentionSeeker>
+      <Fade>
       <div className='first_set'>
       <img className='skill1' src={html} alt="html" />
       <img className='skill1' src={css} alt="css" />
@@ -251,7 +258,7 @@ const Home = () => {
       </div>
       <br />
       <br />
-    
+      </Fade>
      </div>
 
 
