@@ -2,17 +2,23 @@ import React from 'react'
 import "./timeline.css"
 import svnit from "../../assets/svnit.png"
 import bhashyam from "../../assets/bhashyam.png"
-
+import {Fade} from "react-reveal"
+import { FaUserGraduate } from "react-icons/fa";
+import { FaSchool } from "react-icons/fa6";
+import { AttentionSeeker } from 'react-awesome-reveal'
+import { Slide } from 'react-awesome-reveal'
 const Timeline = () => {
 
  
   
   return (
+    <Fade>
     <div className="ag-timeline-container">
     <div  className="ag-timeline-block">
   <div className="ag-timeline_title-box">
+    <AttentionSeeker effect="pulse">
     <div className="ag-timeline_tagline">Education</div>
-    
+    </AttentionSeeker>
   </div>
   <section className="ag-section">
     <div className="ag-format-container">
@@ -26,7 +32,7 @@ const Timeline = () => {
             <div className="ag-timeline-card_box">
               <div className="js-timeline-card_point-box ag-timeline-card_point-box">
                 
-                <div className="ag-timeline-card_point">2021</div>
+                <div className="ag-timeline-card_point"><FaUserGraduate/></div>
               </div>
               <div className="ag-timeline-card_meta-box">
                 <div className="ag-timeline-card_meta">B.Tech (2021-2025)</div>
@@ -34,6 +40,9 @@ const Timeline = () => {
             </div>
 
             <div className="ag-timeline-card_item">
+              <Slide triggerOnce >
+
+           
               <div className="ag-timeline-card_inner">
                 <div className="ag-timeline-card_img-box">
                   <img src={svnit} class="ag-timeline-card_img" width="400" height="300" />
@@ -48,7 +57,7 @@ const Timeline = () => {
                   </div>
                 </div>
               </div>
-              <div className="ag-timeline-card_arrow"></div>
+              </Slide>
             </div>
           </div>
 
@@ -58,38 +67,34 @@ const Timeline = () => {
                 <div class="ag-timeline-card_meta">11th & 12th (2019-2021)</div>
               </div>
               <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                <div class="ag-timeline-card_point">2020</div>
+                <div class="ag-timeline-card_point"> <FaSchool /></div>
               </div>
             </div>
-
+             
             <div class="ag-timeline-card_item">
+                <Slide direction='right' triggerOnce>
               <div class="ag-timeline-card_inner">
                 <div class="ag-timeline-card_img-box">
                   <img src={bhashyam} class="ag-timeline-card_img" width="600" height="300" alt="" />
                 </div>
                 <div class="ag-timeline-card_info">
                   <div class="ag-timeline-card_title">11th & 12th</div>
+                  
                   <div class="ag-timeline-card_desc">
-                      2019-2021
-                     Completed my Intermediate at Bhashyam Junior College. 
+                      2019-2021<br></br>
+                    I had Completed my Intermediate at Bhashyam Junior College. <br></br>
                      Group : MPC <br></br>
                      JEE Main Percentile : 99.5%
 
                   </div>
+                  
                 </div>
               </div>
-              <div class="ag-timeline-card_arrow"></div>
+              </Slide>
             </div>
+            
           </div>
-
-         
-
-          
-          
-          
-
-          
-              <div class="ag-timeline-card_arrow"></div>
+              
             </div>
           </div>
         </div>
@@ -98,7 +103,7 @@ const Timeline = () => {
   </section>
 </div>
   </div>
-  
+  </Fade>
   )
 }
 

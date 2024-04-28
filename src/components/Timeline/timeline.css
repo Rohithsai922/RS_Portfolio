@@ -165,7 +165,7 @@ img {
   display: inline-block;
   width: 45%;
   margin: -77px 0 0;
-  background-color: #282828;
+  background-color:grey ;
 
   opacity: 1;
 
@@ -239,9 +239,14 @@ img {
 }
 .ag-timeline-card_desc {
   line-height: 1.45;
-
+  background-color:white;
   font-size: 16px;
-  color:white;
+  color:black;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-content: center;
+  margin-top: 0px;
 }
 
 

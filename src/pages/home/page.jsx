@@ -20,8 +20,8 @@ import aboutimg from "../../assets/aboutimg.png"
 import { Button } from 'antd'
 import {motion} from 'framer-motion'
 import { useState } from 'react'
-
-
+import { Fade, Zoom } from 'react-reveal';
+import { AttentionSeeker, Bounce, Slide } from 'react-awesome-reveal'
 
 const Home = () => {
   const [isOpen1, setIsOpen1] = useState(false)
@@ -42,14 +42,16 @@ const Home = () => {
       
       
       <div className='hero-section'>
+        
       <div class="blob">
       <img src={profile} alt="Profile" className='profileimg' />
       </div>
+      <Fade>
       <div className="intro">
         <h1>Penumajji Rohith sai</h1>
 
         <div class="typewriter">
-        <h1>I am a Full Stack Developer...</h1>
+        <h1>I am a <span className='typed'>Full Stack Developer </span>...</h1>
 
         </div>
         <h2>Computer Science Student</h2>
@@ -58,17 +60,18 @@ const Home = () => {
         <Button id="resume">Resume</Button>
         </a>
       </div>
-       
+      </Fade>
       </div>
      
         
-
+     <AttentionSeeker effect="pulse" >
       <center><h2 className='heading'>About</h2></center> 
+      </AttentionSeeker>
       <div className="Aboutcontainer">
       
       <div id="About">
         
-
+         <Fade>
           <h3>   
               I am deeply passionate about web development and competitive programming.
           </h3>
@@ -80,28 +83,33 @@ const Home = () => {
                Over time, 
               I've honed my skills in front-end and back-end development, exploring various technologies and frameworks to bring my ideas to life.
           </h3>
-          
+          </Fade>
       </div>
       
+      <Fade>
       <div id="Aboutimage">
+        
         <img alt="about" src={aboutimg} />
+      
+      </div>
+      </Fade>
+
       </div>
 
 
+
+
+      <AttentionSeeker effect="pulse" >
+        <div id="projects">
+      <center><h2 className='heading'>Projects</h2></center> 
       </div>
-
-
-
-
-
-     <div id="projects">
-     <center><h2 className='heading'>Projects</h2></center>
-     </div>
+      </AttentionSeeker>
+     
 
 
     <div className='container'>
     
-
+    
     <motion.div 
         layout 
         className='carde'
@@ -142,8 +150,10 @@ const Home = () => {
           </motion.div>
         )}
       </motion.div>
+      
 
 
+    
       <motion.div 
         layout 
         className='carde'
@@ -179,8 +189,9 @@ const Home = () => {
           </motion.div>
         )}
       </motion.div>
-
-
+      
+    
+     
       <motion.div 
         layout 
         className='carde'
@@ -217,13 +228,15 @@ const Home = () => {
           </motion.div>
         )}
       </motion.div>
+      
      </div>
 
      <Timeline/>
 
      <div className='skill-container'>
-      
+      <AttentionSeeker effect='pulse'>
       <center><h2 className='heading'>Skills</h2></center>
+      </AttentionSeeker>
       <div className='first_set'>
       <img className='skill1' src={html} alt="html" />
       <img className='skill1' src={css} alt="css" />

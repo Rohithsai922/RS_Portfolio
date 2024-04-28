@@ -60,11 +60,13 @@
 
 h2{
     color: white;
-    
+    font-family: 'Times New Roman', Times, serif;
     
 }
 .heading{
     font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    
 }
 
 .container {
@@ -147,6 +149,7 @@ padding: 10px;
     blink-caret .75s step-end infinite;
 }
 
+
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
@@ -191,7 +194,7 @@ p{
   width: 50%;
   margin-left: 20px;
   scroll-margin-top: 100px; /* Adjust as needed */
-  animation: slideFromLeft 1.5s forwards;
+  
   font-family: sans-serif;
   
 }
@@ -200,11 +203,12 @@ p{
   width: 50%;
   
   opacity: 0;
-  animation: slideFromRight 1.5s forwards;
+  
   scroll-margin-top: 100px;
  
   
 }
+
 
 
 
@@ -282,7 +286,7 @@ p{
 
 #Aboutimage img {
   height: 300px;
-  width:300px;
+  width:100%;
   
   display: block; /* Ensure the image is displayed as a block element */
   
