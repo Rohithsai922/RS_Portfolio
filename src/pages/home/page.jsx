@@ -165,7 +165,7 @@ serves as a comprehensive tool for users to track their daily expenses.
           className="card-top" 
           layout="position"
         >     
-     <Cards titlee="A1_Bakery" 
+     <Cards    titlee="A1_Bakery" 
             imagee={bakeryimage}
             descriptionn=""
             github="https://github.com/Rohithsai922/A1_BAKERY.git" 

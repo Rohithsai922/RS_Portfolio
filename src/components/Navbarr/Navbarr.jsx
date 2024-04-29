@@ -24,7 +24,7 @@ const Navbarr= () => {
     <li ><a  href="#contact" className='line'>Contact</a></li>
     <li ><a href="#projects">Projects</a></li>
     <li ><a href="#About">About</a></li>
-    <li  ><Link to="/">Home</Link></li>
+    <li  ><Link to="/" className='home'>Home</Link></li>
     
   
   

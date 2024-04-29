@@ -250,7 +250,7 @@ p{
   .hero-section {
     flex-direction: column;
     margin-bottom: 360px; /* Display cards in a single column on small screens */
-    height: 530px;
+    height: 510px;
   }
   
   .blob {
@@ -363,6 +363,7 @@ p{
     margin: auto; /* Set width to 100% for small screens */
     border: 1px solid black;
     margin-bottom: 20px;
+    margin-right: 20px;
     
   }
   .card-content{
