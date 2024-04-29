@@ -14,10 +14,18 @@
 
 @media (max-width: 767px) {
     .card{
-      margin-left: 20px;/* Display cards in a single column on small screens */
-      margin-right:auto;
+      margin-left: 30px;/* Display cards in a single column on small screens */
+      margin-right :40px;
     }
+
+    .button{
+        width: 120px;
+        margin-left: 2px;
+    }
+
+
 }
+
 .icon{
     padding-left: 3px;
 }
