@@ -14,8 +14,11 @@
 
 @media (max-width: 767px) {
     .card{
-      margin-left: 30px;/* Display cards in a single column on small screens */
-      margin-right :40px;
+      margin-left: 10px;
+      margin-right: 20px;
+      align-items: center;
+      align-content: center;/* Display cards in a single column on small screens */
+    
     }
 
     .button{
