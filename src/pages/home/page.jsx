@@ -17,6 +17,7 @@ import bakeryimage from "../../assets/bakery_bg.jpg"
 import blog from "../../assets/blog.png"
 import aboutimg from "../../assets/aboutimg.png"
 import Timeline from '../../components/Timeline/Timeline'
+import Chatbot from '../../components/Chatbot/Chatbot'
 import { Button } from 'antd'
 import {motion} from 'framer-motion'
 import { useState } from 'react'
@@ -269,6 +270,7 @@ serves as a comprehensive tool for users to track their daily expenses.
      
      
     </div>
+    <Chatbot />
    
    
      
