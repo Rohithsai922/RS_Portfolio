@@ -8,6 +8,7 @@ const ChatBot = () => {
 
   const options = [
     { text: 'Contact info', reply: 'My Email : rohithsai352@gmail.com' },
+    { text: 'Project live links', reply: 'Personal-Blog : https://rs-public-blog.onrender.com/' },
     { text: 'Rate the website', reply: 'Please select a rating from 1 to 5 below:' },
   ];
 
