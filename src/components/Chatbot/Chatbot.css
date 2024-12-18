@@ -71,12 +71,12 @@
     background-color: #0056b3;
   }
 
-  .chat-rating{
+  .chat-rating-control{
     background-color: #007bff;
     color: white;
     border: none;
     padding: 5px 10px;
-    margin:5px;
+    margin:6px;
     border-radius: 5px;
     cursor: pointer;
 

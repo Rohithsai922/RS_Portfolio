@@ -66,7 +66,7 @@ const ChatBot = () => {
               {[1, 2, 3, 4, 5].map((value) => (
                 <button 
                   key={value}
-                  className="chat-rating"
+                  className="chat-rating-control"
                   onClick={() => handleRating(value)}
                   disabled={rating !== null}
                 >
