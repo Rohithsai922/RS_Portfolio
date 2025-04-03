@@ -1,3 +1,21 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAM6WEIiznAEForqJwUI_zTBgcgMam-Jkk",
+  authDomain: "personalblog-7b682.firebaseapp.com",
+  projectId: "personalblog-7b682",
+  storageBucket: "personalblog-7b682.appspot.com",
+  messagingSenderId: "385310800922",
+  appId: "1:385310800922:web:220ca24d2de601e2a6a5a3",
+  measurementId: "G-EGVEJMM34Q"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);

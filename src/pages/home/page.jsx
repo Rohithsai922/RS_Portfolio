@@ -11,15 +11,14 @@ import php from '../../assets/php.png'
 import cpp from '../../assets/cppbgless.png'
 import c from '../../assets/c.png'
 import mysql from '../../assets/mysql.png'
-import iith from '../../assets/iith.png'
-import resume from '../../assets/Rohith_sai_Resume.pdf'
+import resume from '../../assets/Rohith_sai_Resume_SDE__.pdf'
 import expimage from "../../assets/exp_man_bg.webp"
 import bakeryimage from "../../assets/bakery_bg.jpg"
 import blog from "../../assets/blog.png"
 import aboutimg from "../../assets/aboutimg.png"
 import Timeline from '../../components/Timeline/Timeline'
-import Chatbot from '../../components/Chatbot/Chatbot'
-
+import iith from '../../assets/iith.png'
+import barclays from '../../assets/barclays.jpg'
 import { Button } from 'antd'
 import {motion} from 'framer-motion'
 import { useState } from 'react'
@@ -33,6 +32,7 @@ const Home = () => {
   const toggleIsOpen1 = () => {
     setIsOpen1(!isOpen1);
   };
+  
   const toggleIsOpen2 = () => {
     setIsOpen2(!isOpen2);
   };
@@ -100,13 +100,13 @@ const Home = () => {
       </Fade>
 
       </div>
-
-
-        {/* Current Position 
-        
-     <AttentionSeeker effect="pulse" >
+       
+      <AttentionSeeker effect="pulse" >
       <center><h2 className='heading'>Current Position</h2></center> 
       </AttentionSeeker>
+
+      <div className="Aboutcontainer">
+
 
       <Fade>
       <div id="Aboutimage">
@@ -115,8 +115,6 @@ const Home = () => {
       
       </div>
       </Fade>
-
-      <div className="Aboutcontainer">
       
       <div id="About">
         
@@ -125,24 +123,69 @@ const Home = () => {
               Research Intern at IIT Hyderabad
           </h3>
           <h3>
-               Under Guidance of Dr. Saketha Nath 
-               <br />
-               Field : AI & ML
-              
-          </h3>
+              Project Title: Content Generation in Indian Context  
 
-          <h4>
-          Developing a model that generates multimedia in Indian Context.
-          It will be able to generate animated videos with the help of story
-          line in Indian style .
-          </h4>
+
+          </h3>
+          <h4 style={{ lineHeight: "2.0" }}>Developing a model that generates multimedia in Indian Context.
+              <br /> 
+              It will be able to generate animated videos with the help of story
+              line in Indian style .</h4>
+          
           </Fade>
       </div>
       
-    
+      
 
       </div>
+
+
+      
+    {/* Past Experience-nInternship 
+     
+      <AttentionSeeker effect="pulse" >
+      <center><h2 className='heading'>Past Experience</h2></center> 
+      </AttentionSeeker>
+
+      <div className="Aboutcontainer">
+
+
+    
+      
+      <div id="About">
+        
+         <Fade>
+          <h3>   
+             Summer Internship at Barclays
+          </h3>
+          <h3>
+              May 2024 - July 2024
+
+
+          </h3>
+          <h3 style={{ lineHeight: "2.0" }}>
+              
+             </h3>
+          
+          </Fade>
+      </div>
+      
+      <Fade>
+      <div id="Aboutimage">
+        
+        <img alt="about" src={barclays} />
+      
+      </div>
+      </Fade>
+      
+
+      </div>
+
       */}
+
+      {/* Projects Section */}
+     
+        
 
       <AttentionSeeker effect="pulse" >
         <div id="projects">
@@ -184,10 +227,10 @@ const Home = () => {
           >
             <p className='knowmore'>
               
-This expense manager web application, built using multiple technologies, 
-serves as a comprehensive tool for users to track their daily expenses.
- With user authentication in place, it securely stores expense data in a MYSQL database.
- The application facilitates expense analysis by category, offering users insights into their spending patterns.
+             This expense manager web application, built using multiple technologies, 
+             serves as a comprehensive tool for users to track their daily expenses.
+             With user authentication in place, it securely stores expense data in a MYSQL database.
+             The application facilitates expense analysis by category, offering users insights into their spending patterns.
             </p>
             <p className='knowmore'>
               Tech Stacks : HTML,CSS, JS, MYSQL, PHP
@@ -228,8 +271,8 @@ serves as a comprehensive tool for users to track their daily expenses.
              
           In my first year, I participated in the Google Winter of Code Contest with a team of four. 
           Our project involved creating a frontend web application for a bakery,
-         which included a feature to link orders to WhatsApp and various filters based on theme, cost, and rating. . 
-         This experience significantly improved our team and time management skills.
+          which included a feature to link orders to WhatsApp and various filters based on theme, cost, and rating. . 
+          This experience significantly improved our team and time management skills.
             </p>
             <p className='knowmore'>
               Tech Stacks : HTML, CSS, JS .
@@ -254,7 +297,7 @@ serves as a comprehensive tool for users to track their daily expenses.
      <Cards titlee="Personal_Blog" 
            imagee={blog}
           descriptionn="" 
-           github="https://github.com/Rohithsai922/Personal_Blog.git"
+           github="https://github.com/Rohithsai922/RS_Public_Blog"
           onClick={toggleIsOpen3}
           className="card"/>
       </motion.div>
@@ -269,7 +312,7 @@ serves as a comprehensive tool for users to track their daily expenses.
             This Blog web application boasts a range of exceptional features, 
             all geared towards enhancing user experience. 
             With robust user authentication, it enables users to explore blogs based on genres,
-             popularity (most liked), and recency. Moreover, it offers the versatility to manage both personal
+            popularity (most liked), and recency. Moreover, it offers the versatility to manage both personal
             and public blogs, 
             ensuring a seamless experience for all users.
             </p>
