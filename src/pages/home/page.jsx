@@ -11,6 +11,7 @@ import php from '../../assets/php.png'
 import cpp from '../../assets/cppbgless.png'
 import c from '../../assets/c.png'
 import mysql from '../../assets/mysql.png'
+import iith from '../../assets/iith.png'
 import resume from '../../assets/Rohith_sai_Resume.pdf'
 import expimage from "../../assets/exp_man_bg.webp"
 import bakeryimage from "../../assets/bakery_bg.jpg"
@@ -18,6 +19,7 @@ import blog from "../../assets/blog.png"
 import aboutimg from "../../assets/aboutimg.png"
 import Timeline from '../../components/Timeline/Timeline'
 import Chatbot from '../../components/Chatbot/Chatbot'
+
 import { Button } from 'antd'
 import {motion} from 'framer-motion'
 import { useState } from 'react'
@@ -59,7 +61,9 @@ const Home = () => {
         <h2>Final Year at NIT SURAT </h2>
         <a href={resume} download="Rohith_Resume">
         <Button id="resume">Resume</Button>
+
         </a>
+        
       </div>
       </Fade>
       </div>
@@ -98,7 +102,47 @@ const Home = () => {
       </div>
 
 
+        {/* Current Position 
+        
+     <AttentionSeeker effect="pulse" >
+      <center><h2 className='heading'>Current Position</h2></center> 
+      </AttentionSeeker>
 
+      <Fade>
+      <div id="Aboutimage">
+        
+        <img alt="about" src={iith} />
+      
+      </div>
+      </Fade>
+
+      <div className="Aboutcontainer">
+      
+      <div id="About">
+        
+         <Fade>
+          <h3>   
+              Research Intern at IIT Hyderabad
+          </h3>
+          <h3>
+               Under Guidance of Dr. Saketha Nath 
+               <br />
+               Field : AI & ML
+              
+          </h3>
+
+          <h4>
+          Developing a model that generates multimedia in Indian Context.
+          It will be able to generate animated videos with the help of story
+          line in Indian style .
+          </h4>
+          </Fade>
+      </div>
+      
+    
+
+      </div>
+      */}
 
       <AttentionSeeker effect="pulse" >
         <div id="projects">

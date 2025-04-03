@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.4",
+    "@heroicons/react": "^2.2.0",
     "@nextui-org/react": "^2.2.9",
     "@nextui-org/system": "^2.0.15",
     "@nextui-org/theme": "^2.1.17",
@@ -14,6 +15,7 @@
     "bootstrap": "^5.3.2",
     "framer-motion": "^11.0.3",
     "jquery": "^3.7.1",
+    "lucide-react": "^0.487.0",
     "mdb-react-ui-kit": "^7.2.0",
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.2.8",
@@ -21,6 +23,7 @@
     "react-chatbotify": "^2.0.0-beta.26",
     "react-chrono": "^2.6.1",
     "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.5.2",
     "react-icons": "^5.0.1",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^6.22.0",

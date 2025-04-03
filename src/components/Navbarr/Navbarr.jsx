@@ -2,7 +2,7 @@ import React from 'react'
 import '../Navbarr/Navbar.css'
 import { FaUserGraduate } from "react-icons/fa6";
 import { Link } from 'react-router-dom'
-
+import LikeButton from '../Like/LikeButton';
 
 const Navbarr= () => {
 
@@ -20,7 +20,7 @@ const Navbarr= () => {
     </div>
   
     
-
+    <li><LikeButton /></li> 
     <li ><a  href="#contact" className='line'>Contact</a></li>
     <li ><a href="#projects">Projects</a></li>
     <li ><a href="#About">About</a></li>
