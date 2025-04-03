@@ -357,7 +357,7 @@ const Home = () => {
      
      
     </div>
-    <Chatbot />
+   
    
    
      
