@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import '../home/home.css'
 import Cards from '../../components/Cards/cards'
 import profile from '../../assets/Profile_img.png'
@@ -24,7 +24,7 @@ import {motion} from 'framer-motion'
 import { useState } from 'react'
 import { Fade } from 'react-reveal';
 import { AttentionSeeker } from 'react-awesome-reveal'
-
+import TalkingGuide from '../../components/Guide/Guide'
 const Home = () => {
   const [isOpen1, setIsOpen1] = useState(false)
   const [isOpen2, setIsOpen2] = useState(false)
@@ -39,12 +39,35 @@ const Home = () => {
   const toggleIsOpen3 = () => {
     setIsOpen3(!isOpen3);
   };
+
+  const [activeSection, setActiveSection] = useState("hero-section");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["hero-section", "About","Current-Position", "projects","Timeline" ,"contact"];
+      for (let section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
   return (
 
     <div className='body'>
       
-      
-      <div className='hero-section'>
+      <TalkingGuide activeSection={activeSection} />
+      <div className='hero-section' id="hero-section">
         
       <div class="blob">
       <img src={profile} alt="Profile" className='profileimg' />
@@ -72,7 +95,7 @@ const Home = () => {
      <AttentionSeeker effect="pulse" >
       <center><h2 className='heading'>About</h2></center> 
       </AttentionSeeker>
-      <div className="Aboutcontainer">
+      <div className="Aboutcontainer" >
       
       <div id="About">
         
@@ -105,7 +128,7 @@ const Home = () => {
       <center><h2 className='heading'>Current Position</h2></center> 
       </AttentionSeeker>
 
-      <div className="Aboutcontainer">
+      <div className="Aboutcontainer" id="Current-Position">
 
 
       <Fade>
@@ -183,9 +206,11 @@ const Home = () => {
 
       */}
 
+
+
+
+
       {/* Projects Section */}
-     
-        
 
       <AttentionSeeker effect="pulse" >
         <div id="projects">
@@ -195,7 +220,7 @@ const Home = () => {
      
 
 
-    <div className='container'>
+    <div className='container' id="projects">
      
     
     <motion.div 
@@ -325,9 +350,12 @@ const Home = () => {
       
      </div>
 
-     <Timeline/>
+     {/*Timeline*/}
+      <div id="Timeline">
+     <Timeline />
+      </div>
 
-     <div className='skill-container'>
+     <div className='skill-container' id="contact">
       <AttentionSeeker effect='pulse'>
       <center><h2 className='heading'>Skills</h2></center>
       </AttentionSeeker>
@@ -353,7 +381,7 @@ const Home = () => {
 
 
          
-    <div id='contact'> 
+    <div> 
      
      
     </div>
@@ -362,7 +390,7 @@ const Home = () => {
    
      
     
-  
+    <div id="contact"></div>
      <Footer/>
     </div>
   )
